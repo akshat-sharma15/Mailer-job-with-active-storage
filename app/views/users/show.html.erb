@@ -1,0 +1,6 @@
+<% if @user.avatar.attached? %>
+  <%= image_tag url_for(@user.avatar) %>
+<% end %><br>
+<%= @user.name %><br>
+<%= @user.email %><br>
+<%= @user.dob %><br>
